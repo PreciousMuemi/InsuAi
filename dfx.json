@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "InsuAi_backend": {
+      "main": "src/InsuAi_backend/main.mo",
+      "type": "motoko"
+    },
+    "InsuAi_frontend": {
+      "dependencies": [
+        "InsuAi_backend"
+      ],
+      "source": [
+        "src/InsuAi_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "InsuAi_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
